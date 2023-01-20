@@ -168,7 +168,8 @@ input[type="range"]::-moz-range-thumb {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-  background: var(--Strong-Cyan) url('../images/icon-slider.svg') no-repeat center center;
+  background: var(--Strong-Cyan) url("../images/icon-slider.svg") no-repeat
+    center center;
   background-size: 55%;
 }
 
@@ -181,7 +182,41 @@ input[type="range"]::-moz-range-track {
 
 input[type="range"]::-moz-range-progress {
   background-color: var(--Soft-Cyan);
-  height: .375rem;
+  height: 0.375rem;
+}
+
+.plan_price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.price {
+  color: var(--Dark-Desaturated-Blue);
+  font-size: 2rem;
+  font-weight: var(--fw-extra-bold);
+}
+
+.plan_choice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.discount {
+  font-size: 0.6875rem;
+  font-weight: var(--fw-extra-bold);
+  padding: 0.125rem 0.5rem;
+  border-radius: 2rem;
+  background-color: var(--Light-Grayish-Red);
+  color: var(--Light-Red);
+}
+
+.plan_info {
+  border-top: 1px solid var(--Light-Grayish-Blue);
+  padding-top: 1rem;
 }
 
 button {
