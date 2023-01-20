@@ -110,34 +110,34 @@ body {
 }
 
 body::before {
-    content: '';
-    width: 100%;
-    height: 50%;
-    background-color: hsl(222, 87%, 97%);
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 0 0 0 10rem;
+  content: "";
+  width: 100%;
+  height: 50%;
+  background-color: hsl(222, 87%, 97%);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 0 0 0 10rem;
 }
 
 .headings {
-    background: url('../images/pattern-circles.svg') no-repeat top center/contain;
-    margin-top: 2.75rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    margin-bottom: 2.5rem;
+  background: url("../images/pattern-circles.svg") no-repeat top center/contain;
+  margin-top: 2.75rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .card {
-    padding: 0 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .card h1 {
   color: var(--Dark-Desaturated-Blue);
   font-size: 1.3125rem;
-  margin-bottom: .5625rem;
+  margin-bottom: 0.5625rem;
 }
 
 .card h2 {
@@ -146,7 +146,51 @@ body::before {
 }
 
 .subscription_plan {
-    background-color: var(--White);
+  display: grid;
+  gap: 1rem;
+  background-color: var(--White);
+  padding: 2rem 0.5rem;
+}
+
+.page_views {
+  text-transform: uppercase;
+  font-weight: var(--fw-extra-bold);
+  font-size: 0.8125rem;
+  letter-spacing: 0.125rem;
+}
+
+#islider {
+  width: 90%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--Strong-Cyan) url('../images/icon-slider.svg') no-repeat center center;
+  background-size: 55%;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: var(--Light-Grayish-Blue);
+  height: 0.375rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+input[type="range"]::-moz-range-progress {
+  background-color: var(--Soft-Cyan);
+  height: .375rem;
+}
+
+button {
+  border: none;
+  color: var(--Pale-Blue);
+  background-color: var(--Dark-Desaturated-Blue);
+  padding: 0.5rem 2.5rem;
+  border-radius: 2rem;
+  margin: 2rem 0;
 }
 
 .attribution {
